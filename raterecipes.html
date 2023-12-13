@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=contactstyle.css>
+    <title>RATE RECIPES</title>
+    <style>
+        body {
+            font-family:sans-serif;
+            background-color: rgb(255,250,240);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .recipe {
+            background-color: rgb(42,76,55);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .rating-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .star {
+            cursor: pointer;
+            font-size: 24px;
+            color: #ccc;
+            margin-right: 5px;
+        }
+
+        .star:hover,
+        .star.active {
+            color: #ffdd00;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <p>
+        <img src="" alt=""> 
+    </p>
+    <div class="container">
+        <h1>RATE RECIPES</h1>
+        <div class="topnav">
+            <a class="active" href="index.html">HOME</a>
+            <a href="contactus.html"><span>CONTACT US</span>&emsp;</a>
+            <a href="allrecipes.html"><span>ALL RECIPES</span>&emsp;</a>
+            <a href="raterecipes.html"><span>RATE RECIPES</span>&emsp;</a>
+            <a href="login.html"><span>LOGIN</span>&emsp;</a>
+        </div>
+        <form action="/search" method="GET">
+            <label for="search"></label>
+            <input type="text" id="search" name="q" placeholder="Enter your search term">
+            <input type="submit" value="Search">
+        </form>
+        <div class="recipe">
+            <h2>Delicious Recipe1</h2>
+            <p>SAMPLE DESCRIPTION OF RECIPE</p>
+    
+            <div class="rating-container">
+                <p>Rate this recipe:</p>
+                <span class="star" onclick="rateRecipe(1)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(2)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(3)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(4)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(5)">&#9733;</span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+       
+    
+        <script>
+            function rateRecipe(rating) {
+                
+                console.log('User rated the recipe:', rating);
+    
+                /// add a visual indication of the selected rating
+                const stars = document.querySelectorAll('.star');
+                stars.forEach((star, index) => {
+                    if (index < rating) {
+                        star.classList.add('active');
+                    } else {
+                        star.classList.remove('active');
+                    }
+                });
+            }
+        </script>
+    
+  
+    
+</body>
+</html>
