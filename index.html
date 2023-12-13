@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=style.css>
+
+</head>\
+<h1>
+    <Title>The Flavor Locator</Title>
+</h1>
+
+<body>
+   <div class="container">
+        <h1 class="outlined-text"> The Flavor Locator</h1>
+        <div class="topnav">
+            <a class="active" href="index.html">HOME</a>
+            <a href="contactus.html"><span>CONTACT US</span>&emsp;</a>
+            <a href="allrecipes.html"><span>ALL RECIPES</span>&emsp;</a>
+            <a href="raterecipes.html"><span>RATE RECIPES</span>&emsp;</a>
+            <a href="login.html"><span>LOGIN</span>&emsp;</a>
+           
+        </div>
+        
+        <form action="/search" method="GET">
+            <label for="search"></label>
+            <input type="text" id="search" name="q" placeholder="Enter your search term">
+            <input type="submit" value="Search">
+        </form>
+        <form action="/submit-recipe" method="post">
+            <h2>Submit Your Recipe!</h2>
+    
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" name="name" required>
+    
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+    
+            <label for="steps">Steps:</label>
+            <textarea id="steps" name="steps" rows="6" required></textarea>
+    
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+    
+            <input type="submit" value="Submit Recipe">
+        </form>
+    
+        
+        
+        
+           
+            
+        
+
+        <style>
+            @media all and (max-width: 700px) {
+
+                .row,
+                .navbar {
+                    flex-direction: column;
+                }
+            }
+        </style>
+
+
+
+
+</body>
+
+</html>
