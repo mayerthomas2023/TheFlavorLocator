@@ -6,14 +6,14 @@ head{
     text-align: center;
     font-family:"sans-serif";
     font-size:16px;
-    width:16px;
+    width:100%;
     
     }
 h1{
     text-align: center;
     font-size: 6em;
     background-color: rgba(255,250,240, 0.4);
-    width: 16px;
+    width: 100%;
     margin:0 auto;
 }
 .outlined-text {
@@ -35,7 +35,7 @@ form {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
-    margin-bottom: 20%;
+    margin-bottom: 20px;
     
 }
 
@@ -46,7 +46,7 @@ label {
 
 input,
 textarea {
-    width: 16px;
+    width: 100%;
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
