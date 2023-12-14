@@ -17,7 +17,7 @@ h1{
     margin:0 auto;
 }
 .outlined-text {
-    font-size: 150px;
+    font-size: 937.5%;
     color: rgb(42,76,55); 
     text-shadow: 2px 2px 2px #000000, -3px -3px 3px #000000, 3px -3px 3px #000000, -3px 3px 3px #000000;
 }
