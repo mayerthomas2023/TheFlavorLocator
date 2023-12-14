@@ -112,9 +112,11 @@ input[type="submit"] {
 }
 
 .photo {
-    margin-right: 10px; 
-    width: 350px; 
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px; 
     height: auto;
+    object-fit:cover;
 }
 
 .content {
