@@ -23,9 +23,9 @@ p {
     text-align: center;
     font-family: "sans-serif";
     font-size: 16px;
+    color: #000; /* Ensure this is readable against the background-color */
     background-color: rgb(255,250,240);
 }
-
 .recipe {
     background: #fff;
     padding: 15px;
@@ -76,15 +76,15 @@ p {
     text-align: center;
 }
 
-    .topnav a {
-        float: center;
-        color: floralwhite;
-        text-align: center;
-        padding: 14px 16px;
-        border-bottom: 3px black;
-        text-decoration: none;
-        font-size: 25px;
-    }
+.topnav a {
+    float: center;
+    color: #fff; /* Adjust if necessary for readability */
+    text-align: center;
+    padding: 14px 16px;
+    border-bottom: 3px black;
+    text-decoration: none;
+    font-size: 25px;
+}
     .column {
         float: right;
         width: 33.33%;
