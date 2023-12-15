@@ -2,6 +2,14 @@ title{
     text-align: center;
     font-family:"sans-serif";
 }
+h1 {
+    text-align: center;
+    font-size: 5em;
+    background-image: url('StockFood5.jpeg');
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 body {
     background-image: url('StockFood5.jpeg');
