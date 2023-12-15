@@ -18,12 +18,14 @@ body {
     background-repeat: repeat;
     font-size: 25px;
     color: #000; 
+    text-align: center;
 }
 
 
 .container {
     color: rgb(1,50,32;
     background-color: rgba(42,76,55, 0.8); 
+    text-align: center;
 }
 
 p {
@@ -78,18 +80,16 @@ p {
     color: black;
 }
 
-.topnav {
+topnav {
     background-color: rgb(0,100,0);
     overflow: hidden;
-    text-align: center;
+    text-align: center; /* Center align content */
 }
 
 .topnav a {
-    float: center;
-    color: #fff; /* Adjust if necessary for readability */
-    text-align: center;
+    display: inline-block; /* Change from float to inline-block for center alignment */
+    color: floralwhite;
     padding: 14px 16px;
-    border-bottom: 3px black;
     text-decoration: none;
     font-size: 25px;
 }
