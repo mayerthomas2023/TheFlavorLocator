@@ -1,4 +1,4 @@
-if (isset($_GET['query'])) 
+<?php if (isset($_GET['query'])) 
     $search = $_GET['query'];
 
     // Database connection
