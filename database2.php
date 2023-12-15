@@ -6,8 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $steps = $_POST['steps'];
     $additionalNotes = $_POST['notes'];
 
-    // SQL query to insert data into the database
-    $stmt = $pdo->prepare("INSERT INTO your_table_name (recipe_name, ingredients, steps, additional_notes) VALUES (:recipe_name, :ingredients, :steps, :additional_notes)");
+    $stmt = $pdo->prepare("INSERT INTO recipe_submissions (recipe_name, ingredients, steps, additional_notes) VALUES (:recipe_name, :ingredients, :steps, :additional_notes)");
     $stmt->execute([
         'recipe_name' => $recipeName,
         'ingredients' => $ingredients,
@@ -15,5 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'additional_notes' => $additionalNotes
     ]);
 
-    echo "Recipe submitted successfully!";
+header('Location: https://flavorlocator-b0a906f26984.herokuapp.com/');
+exit();
 }
