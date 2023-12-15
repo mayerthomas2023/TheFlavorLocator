@@ -42,14 +42,13 @@
     $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // Loop through the results 
-    foreach ($recipes as $recipe): ?>
-        <div>
-            <h2><?php echo htmlspecialchars($recipe['recipe_name']); ?></h2>
-            <p><?php echo htmlspecialchars($recipe['ingredients']); ?></p>
-            <p><?php echo htmlspecialchars($recipe['steps']); ?></p>
-            <p><?php echo htmlspecialchars($recipe['additional_notes']); ?></p>
-            
-        </div>
-    <?php endforeach; ?>
+foreach ($recipes as $recipe): ?>
+    <div>
+        <h2><?php echo htmlspecialchars($recipe['recipe_name'] ?? ''); ?></h2>
+        <p><?php echo htmlspecialchars($recipe['ingredients'] ?? ''); ?></p>
+        <p><?php echo htmlspecialchars($recipe['steps'] ?? ''); ?></p>
+        <p><?php echo htmlspecialchars($recipe['additional_notes'] ?? ''); ?></p>
+    </div>
+<?php endforeach; ?>
 
 
