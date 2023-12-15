@@ -4,17 +4,26 @@ title{
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-image: url('StockFood5.jpeg');
+    background-size: cover; 
+    background-position: auto 100%;
+    background-repeat: repeat;
+    font-size: 25px;
+    color: #000; 
 }
 
+
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    color: rgb(255,250,240);
+    background-color: rgba(42,76,55, 0.8); 
+}
+
+p {
+    border-color: black;
+    text-align: center;
+    font-family: "sans-serif";
+    font-size: 16px;
+    background-color: rgb(255,250,240);
 }
 
 .recipe {
@@ -61,11 +70,11 @@ body {
     color: black;
 }
 
-    .topnav {
-        background-color: rgb (0,100,0);
-        overflow: hidden;
-        text-align: center;
-    }
+.topnav {
+    background-color: rgb(0,100,0);
+    overflow: hidden;
+    text-align: center;
+}
 
     .topnav a {
         float: center;
@@ -75,4 +84,15 @@ body {
         border-bottom: 3px black;
         text-decoration: none;
         font-size: 25px;
+    }
+    .column {
+        float: right;
+        width: 33.33%;
+        padding: 6px;
+    }
+    
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
     }
