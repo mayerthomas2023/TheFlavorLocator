@@ -12,7 +12,7 @@
     <div class="container">
         <h1>ALL RECIPES</h1>
         <div class="topnav">
-            <a class="active" href="index.html">HOME</a>
+            <a class="active" href="home.html">HOME</a>
             <a href="contactus.html"><span>CONTACT US</span>&emsp;</a>
             <a href="allrecipes.html"><span>ALL RECIPES</span>&emsp;</a>
             <a href="raterecipes.html"><span>RATE RECIPES</span>&emsp;</a>
