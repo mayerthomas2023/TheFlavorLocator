@@ -25,11 +25,25 @@
             
         </form>
         </body>
-<?php>       
- 
+    
+    <?php
+
+
+    // Database 
+    $pdo = new PDO("pgsql:host=ec2-34-236-100-103.compute-1.amazonaws.com;dbname=df7jav21pe862", "igdfndgbifihqx", "4e8923df29872b86da2cd47295c7ac3b9b2b1b9a8d61029e6c47ad0eb792f7c3");
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Retrieve data 
     $stmt = $pdo->query("SELECT * FROM recipe_submissions");
     $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
 
+    // Loop through the results 
+    foreach ($recipes as $recipe): ?>
+        <div>
+            <h2><?php echo htmlspecialchars($recipe['recipe_name']); ?></h2>
+            <p><?php echo htmlspecialchars($recipe['ingredients']); ?></p>
+            
+        </div>
+    <?php endforeach; ?>
 
 
