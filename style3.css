@@ -17,51 +17,58 @@ h1{
     margin:0 auto;
 }
 
-    body{
-        background-image: url('StockFood5.jpeg');
-        background-size: cover; 
-        background-position: auto 100%;
-        background-repeat: repeat;
-        font-size: 25px ;
-        color: floralwhite;
-}
-form {
-    text-align: right;
-    margin-top: 25px; 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-label {
-    display: inline-block;
-    margin-right: 5px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-input[type="text"] {
-    padding: 5px;
+.recipe {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-input[type="submit"] {
-    padding: 5px 10px;
+.recipe h2 {
+    color: #444;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
-    
 
-    
-.container{
-    color: rgb(255,250,240);
-    background-color: rgb(42,76,55);
-    
-}
-p{
-    border-color: black;
-    text-align: center;
-    font-family:"sans-serif";
-    font-size:16px;
-    background-color: rgb(255,250,240);
-    
-
+.recipe p {
+    margin: 10px 0;
+    color: #666;
 }
 
 
+.recipe p {
+    word-wrap: break-word;
+}
 
+
+.recipe:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .recipe h2 {
+        font-size: 1.2em;
+    }
+}
 
 .topnav a:hover {
     background-color: #ddd;
