@@ -59,6 +59,24 @@ p {
 .recipe p {
     word-wrap: break-word;
 }
+.recipe-box {
+    background-color: FloralWhite; 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin-bottom: 20px;
+    text-align: left; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.recipe-box h2 {
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.recipe-box p {
+    color: #666; 
+    line-height: 1.6; 
+}
 
 
 .recipe:hover {
